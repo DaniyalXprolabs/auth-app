@@ -1,0 +1,9 @@
+<div class="articles">
+  <h1>Articles</h1>
+  <% articles('Google').each do |item| %>
+    <div class="article">
+      <h2><%= item.title %></h2>
+      <p><%= item.pubDate %></p>
+    </div>
+  <% end %>
+</div>
